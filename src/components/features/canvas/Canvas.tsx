@@ -178,7 +178,7 @@ const Canvas: React.FC = () => {
   const canvas = canvasRef.current;
   if (canvas) {
     try {
-      const response = await fetch("http://localhost:8900/calculate", {
+      const response = await fetch("https://canvas-api-hjmw.onrender.com/calculate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
