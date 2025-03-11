@@ -15,7 +15,7 @@ const BOSGenerator = () => {
     try {
       setGenerating(true);
       setError('');
-      const response = await fetch('http://127.0.0.1:8001/get_content', {
+      const response = await fetch('https://content-gen-api.onrender.com/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
