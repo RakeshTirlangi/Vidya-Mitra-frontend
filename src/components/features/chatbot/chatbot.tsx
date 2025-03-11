@@ -82,7 +82,7 @@ const MultilingualChatbot: React.FC = () => {
       console.log(requestData)
 
       // Make API call to backend
-      const response = await fetch('http://localhost:8001/chat', {
+      const response = await fetch('https://chat-bot-api-31xd.onrender.com/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
