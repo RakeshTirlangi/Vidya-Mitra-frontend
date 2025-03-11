@@ -18,7 +18,7 @@ const CodeGenerator = () => {
   const [error, setError] = useState('');
 
   const generateCode = async (prompt: string): Promise<CodeResponse> => {
-    const response = await fetch('http://localhost:8008/generate-code/', {
+    const response = await fetch('https://code-generation-api-1qpd.onrender.com/generate-code', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
