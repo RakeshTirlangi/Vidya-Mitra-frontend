@@ -28,7 +28,7 @@ const SOSExamRescueKit = () => {
     setGeneratedContent('');
 
     try {
-      const response = await fetch(' http://localhost:8006/generate-study-aid', {
+      const response = await fetch('https://sos-api-1.onrender.com/generate-study-aid', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
