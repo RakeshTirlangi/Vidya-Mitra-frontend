@@ -21,9 +21,8 @@ const BOSGenerator = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          subject: '',
           topic: topic,
-          student_level: level,
+          level: level,
         }),
       });
 
